@@ -54,6 +54,7 @@ header.scrolled{background:rgba(11,11,11,.92);backdrop-filter:blur(10px);border-
 .nav ul a:hover{color:var(--bronze-l)}
 .nav .btn{padding:11px 20px;font-size:.9rem}
 .burger{display:none;background:none;border:0;width:40px;height:40px;cursor:pointer}
+.nav .m-only{display:none}
 .burger span{display:block;height:2px;background:#fff;margin:7px 6px;transition:.3s}
 
 /* Hero */
@@ -195,6 +196,8 @@ footer a:hover{color:var(--bronze-l)}
   header.open{background:var(--black)}
   header.open .nav ul{display:flex;flex-direction:column;position:absolute;top:calc(84px + env(safe-area-inset-top,0px));left:0;right:0;background:var(--black);padding:10px max(var(--gutter),env(safe-area-inset-right,0px)) 30px max(var(--gutter),env(safe-area-inset-left,0px));gap:0;border-bottom:1px solid var(--line)}
   header.open .nav ul a{display:block;padding:16px 0;border-bottom:1px solid var(--line);font-size:1.1rem}
+  header.open .nav .m-only{display:block}
+  header.open .nav ul a.m-sistema{margin-top:18px;border:0;border-radius:999px;background:var(--bronze);color:#fff;text-align:center;padding:15px 0;font-weight:500}
   header.open .burger span:nth-child(1){transform:translateY(9px) rotate(45deg)}
   header.open .burger span:nth-child(2){opacity:0}
   header.open .burger span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}
@@ -450,8 +453,11 @@ footer .logo{width:200px}
       <li><a href="#pilares">Pilares</a></li>
       <li><a href="#dicas">Fique atento</a></li>
       <li><a href="#contato">Contato</a></li>
+      <li class="m-only"><a class="m-sistema" href="https://sistema.solucoes360.com.br/login/" target="_blank" rel="noopener">Entrar no Sistema 360</a></li>
     </ul>
-    <a class="btn btn-primary" href="https://wa.me/5587988626321" target="_blank" rel="noopener">Fale conosco</a>
+    <a class="btn btn-primary" href="https://sistema.solucoes360.com.br/login/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><path d="m10 17 5-5-5-5"/><path d="M15 12H3"/></svg>
+      Sistema 360</a>
     <button class="burger" aria-label="Abrir menu"><span></span><span></span><span></span></button>
   </div>
 </header>
